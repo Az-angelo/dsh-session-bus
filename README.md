@@ -20,8 +20,7 @@
 **方式 1：从 npm（推荐）**
 
 ```bash
-# 在 DSH 里
-plugin_manager install_bundle dsh-session-bus
+plugin_manager install_bundle @ruoy/dsh-session-bus
 ```
 
 **方式 2：本地目录**
