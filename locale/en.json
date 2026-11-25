@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Session bus",
+    "description": "See what other sessions are doing and send them messages, queued or waking."
+  },
+  "tab": {
+    "title": "Session bus"
+  },
+  "panel": {
+    "sessions": "Sessions",
+    "messages": "Messages",
+    "audit": "Audit",
+    "empty": "No traffic yet.",
+    "open": "Session bus",
+    "unread": "unread",
+    "live": "live",
+    "offline": "offline",
+    "self": "this session",
+    "reload": "Reload UI",
+    "refresh": "Refresh",
+    "reloadHint": "Reload the whole UI (same as F5, which often misses the page on this machine)",
+    "refreshHint": "Fetch panel data again without reloading the page"
+  }
+}

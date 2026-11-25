@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "会话互通",
+    "description": "查看其他会话在做什么、给它们发消息（默认排队，可显式唤醒）"
+  },
+  "tab": {
+    "title": "会话互通"
+  },
+  "panel": {
+    "sessions": "会话",
+    "messages": "消息",
+    "audit": "审计",
+    "empty": "还没有消息往来。",
+    "open": "会话互通",
+    "unread": "未读",
+    "live": "在线",
+    "offline": "离线",
+    "self": "本会话",
+    "reload": "重载界面",
+    "refresh": "刷新数据",
+    "reloadHint": "重新加载整个界面（等价于按 F5，本机快捷键经常打不到页面）",
+    "refreshHint": "只重新拉一次面板数据，不重载页面"
+  }
+}

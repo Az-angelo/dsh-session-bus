@@ -1,0 +1,62 @@
+{
+  "name": "dsh-session-bus",
+  "version": "0.2.0",
+  "private": false,
+  "type": "module",
+  "description": "会话互通：让同一 profile 内的会话互相查看、互相发消息、并监督目标是否跑偏。默认只排队不唤醒，监督默认只汇报不打断。Session bus for DeepSeek Harness: read other sessions, message them (queued or waking), and supervise them with report/steer/guard modes.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "multi-agent",
+    "bus",
+    "supervision"
+  ],
+  "license": "MIT",
+  "author": "张宇豪",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Az-angelo/dsh-session-bus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Az-angelo/dsh-session-bus/issues"
+  },
+  "homepage": "https://github.com/Az-angelo/dsh-session-bus#readme",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./panel.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "panel.js",
+    "lib/core.mjs",
+    "cordis.patch.yml",
+    "locale/zh.json",
+    "locale/en.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-0"
+  },
+  "scripts": {
+    "test": "node test/core.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  }
+}
